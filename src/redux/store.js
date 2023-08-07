@@ -1,7 +1,8 @@
 import { createStore } from "redux";
-import { TransactionReducer } from "./Reducers/TransactionReducer";
+import { rootReducer } from "./Reducers/combineReducers";
+
 
 export const store = createStore(
-  TransactionReducer,
+  rootReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
